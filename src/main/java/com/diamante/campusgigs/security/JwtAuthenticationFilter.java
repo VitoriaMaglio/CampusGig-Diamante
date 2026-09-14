@@ -1,4 +1,4 @@
-package com.projeto.campusgigs.security;
+package com.diamante.campusgigs.security;
 
 
 import jakarta.servlet.FilterChain;

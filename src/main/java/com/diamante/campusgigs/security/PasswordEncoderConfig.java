@@ -1,4 +1,4 @@
-package com.projeto.campusgigs.security;
+package com.diamante.campusgigs.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

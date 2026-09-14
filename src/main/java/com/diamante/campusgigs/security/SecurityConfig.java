@@ -1,4 +1,4 @@
-package com.projeto.campusgigs.security;
+package com.diamante.campusgigs.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

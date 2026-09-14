@@ -1,7 +1,7 @@
-package com.projeto.campusgigs.security;
+package com.diamante.campusgigs.security;
 
-import com.projeto.campusgigs.entity.User;
-import com.projeto.campusgigs.repository.UserRepository;
+import com.diamante.campusgigs.entity.User;
+import com.diamante.campusgigs.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

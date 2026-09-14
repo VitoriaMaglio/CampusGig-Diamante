@@ -1,4 +1,4 @@
-package com.projeto.campusgigs.security;
+package com.diamante.campusgigs.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
