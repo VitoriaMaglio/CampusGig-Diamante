@@ -37,9 +37,8 @@ public class GigService {
     }
 
     public List<Gig> listActive() {
-        return gigRepository.findByStatus(GigStatus.ACTIVE);
+        return gigRepository.findByStatusWithProvider(GigStatus.ACTIVE);
     }
-
     public void close(Long gigId) {
         Gig gig = gigRepository.findById(gigId)
                 .orElseThrow(() -> new GigNotFoundException(gigId));

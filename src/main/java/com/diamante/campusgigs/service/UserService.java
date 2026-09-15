@@ -60,4 +60,17 @@ public class UserService {
             throw new CepServiceUnavailableException();
         }
     }
+
+    public User updateZipCode(Long userId, String zipCode) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalStateException("Usuário não encontrado"));
+
+        var address = lookupAddress(zipCode);
+
+        user.setZipCode(zipCode);
+        user.setCity(address.getLocalidade());
+        user.setState(address.getUf());
+
+        return userRepository.save(user);
+    }
 }
