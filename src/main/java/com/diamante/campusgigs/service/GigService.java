@@ -1,14 +1,14 @@
-package com.projeto.campusgigs.service;
+package com.diamante.campusgigs.service;
 
-import com.projeto.campusgigs.entity.Gig;
-import com.projeto.campusgigs.entity.User;
-import com.projeto.campusgigs.entity.enuns.GigStatus;
-import com.projeto.campusgigs.entity.enuns.Role;
-import com.projeto.campusgigs.entity.dto.CreateGigRequest;
-import com.projeto.campusgigs.exception.ForbiddenOperationException;
-import com.projeto.campusgigs.exception.GigNotFoundException;
-import com.projeto.campusgigs.repository.GigRepository;
-import com.projeto.campusgigs.security.AuthenticatedUserProvider;
+import com.diamante.campusgigs.entity.Gig;
+import com.diamante.campusgigs.entity.User;
+import com.diamante.campusgigs.entity.dto.CreateGigRequest;
+import com.diamante.campusgigs.entity.enuns.GigStatus;
+import com.diamante.campusgigs.entity.enuns.Role;
+import com.diamante.campusgigs.exception.ForbiddenOperationException;
+import com.diamante.campusgigs.exception.GigNotFoundException;
+import com.diamante.campusgigs.repository.GigRepository;
+import com.diamante.campusgigs.security.AuthenticatedUserProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

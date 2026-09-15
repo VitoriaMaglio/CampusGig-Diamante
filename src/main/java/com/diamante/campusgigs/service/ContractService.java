@@ -1,18 +1,18 @@
-package com.projeto.campusgigs.service;
+package com.diamante.campusgigs.service;
 
 
-import com.projeto.campusgigs.entity.Contract;
-import com.projeto.campusgigs.entity.Gig;
-import com.projeto.campusgigs.entity.User;
-import com.projeto.campusgigs.entity.enuns.ContractStatus;
-import com.projeto.campusgigs.entity.enuns.GigStatus;
-import com.projeto.campusgigs.entity.dto.CreateContractRequest;
-import com.projeto.campusgigs.exception.CannotHireOwnGigException;
-import com.projeto.campusgigs.exception.GigNotActiveException;
-import com.projeto.campusgigs.exception.GigNotFoundException;
-import com.projeto.campusgigs.repository.ContractRepository;
-import com.projeto.campusgigs.repository.GigRepository;
-import com.projeto.campusgigs.security.AuthenticatedUserProvider;
+import com.diamante.campusgigs.entity.Contract;
+import com.diamante.campusgigs.entity.Gig;
+import com.diamante.campusgigs.entity.User;
+import com.diamante.campusgigs.entity.dto.CreateContractRequest;
+import com.diamante.campusgigs.entity.enuns.ContractStatus;
+import com.diamante.campusgigs.entity.enuns.GigStatus;
+import com.diamante.campusgigs.exception.CannotHireOwnGigException;
+import com.diamante.campusgigs.exception.GigNotActiveException;
+import com.diamante.campusgigs.exception.GigNotFoundException;
+import com.diamante.campusgigs.repository.ContractRepository;
+import com.diamante.campusgigs.repository.GigRepository;
+import com.diamante.campusgigs.security.AuthenticatedUserProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

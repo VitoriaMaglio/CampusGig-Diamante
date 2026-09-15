@@ -1,20 +1,18 @@
-package com.projeto.campusgigs.service;
+package com.diamante.campusgigs.service;
 
 
-import com.projeto.campusgigs.entity.User;
-import com.projeto.campusgigs.entity.enuns.Role;
-import com.projeto.campusgigs.entity.dto.RegisterRequest;
-import com.projeto.campusgigs.exception.EmailAlreadyInUseException;
-import com.projeto.campusgigs.repository.UserRepository;
+import com.diamante.campusgigs.client.CepClient;
+import com.diamante.campusgigs.client.CepResponse;
+import com.diamante.campusgigs.entity.User;
+import com.diamante.campusgigs.entity.dto.RegisterRequest;
+import com.diamante.campusgigs.entity.enuns.Role;
+import com.diamante.campusgigs.exception.CepNotFoundException;
+import com.diamante.campusgigs.exception.CepServiceUnavailableException;
+import com.diamante.campusgigs.exception.EmailAlreadyInUseException;
+import com.diamante.campusgigs.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import com.projeto.campusgigs.client.CepClient;
-import com.projeto.campusgigs.client.CepResponse;
-import com.projeto.campusgigs.exception.CepNotFoundException;
-import com.projeto.campusgigs.exception.CepServiceUnavailableException;
-
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestClientResponseException;
 
